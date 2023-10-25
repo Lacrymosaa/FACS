@@ -3,15 +3,15 @@ CREATE DATABASE `db_facs`;
 
 USE `db_facs`;
 
--- Tabela Usuarios 
+-- Tabela Usuario
 CREATE TABLE Usuario (
     id_usuario INT PRIMARY KEY,
     email VARCHAR(100),
     senha_hash VARCHAR(100)
 );
 
--- Tabela Departamentos
-CREATE TABLE Departamento (
+-- Tabela Departamento
+CREATE TABLE Departamento  (
     id_departamento INT PRIMARY KEY AUTO_INCREMENT,
     nome_departamento VARCHAR(50)
 );
@@ -39,8 +39,8 @@ CREATE TABLE Armario (
     armario_status BIT NOT NULL,
     armario_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
 
 -- Tabela Cadeira
@@ -54,8 +54,8 @@ CREATE TABLE Cadeira (
     cadeira_status BIT NOT NULL,
     cadeira_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
 
 -- Tabela Informatica
@@ -69,8 +69,8 @@ CREATE TABLE Informatica (
     informatica_status BIT NOT NULL,
     informatica_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
 
 -- Tabela Eletrodomestico
@@ -84,8 +84,8 @@ CREATE TABLE Eletrodomestico (
     eletrodomestico_status BIT NOT NULL,
     eletrodomestico_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
 
 -- Tabela Mesa
@@ -99,11 +99,11 @@ CREATE TABLE Mesa (
     mesa_status BIT NOT NULL,
     mesa_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
 
--- Tabela Patrimonio Diversos
+-- Tabela Patrimonio Diverso
 CREATE TABLE PatrimonioDiverso (
     id_patrimonio_diverso INT PRIMARY KEY AUTO_INCREMENT,
     patrimonio_diverso_numero_patrimonio INT NOT NULL,
@@ -114,8 +114,8 @@ CREATE TABLE PatrimonioDiverso (
     patrimonio_diverso_status BIT NOT NULL,
     patrimonio_diverso_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
 
 -- Tabela Poltrona
@@ -129,8 +129,8 @@ CREATE TABLE Poltrona (
     poltrona_status BIT NOT NULL,
     poltrona_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
 
 -- Tabela Som e Imagem
@@ -144,8 +144,8 @@ CREATE TABLE SomImagem (
     som_imagem_status BIT NOT NULL,
     som_imagem_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
 
 -- Tabela Telefone
@@ -159,6 +159,6 @@ CREATE TABLE Telefone (
     telefone_status BIT NOT NULL,
     telefone_path_foto VARCHAR(100) NOT NULL,
     id_nota_fiscal INT NOT NULL,
-    FOREIGN KEY (id_departamento) REFERENCES Departamentos(id_departamento) ON DELETE CASCADE,
-    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal) ON DELETE CASCADE
+    FOREIGN KEY (id_departamento) REFERENCES Departamento(id_departamento),
+    FOREIGN KEY (id_nota_fiscal) REFERENCES NotaFiscal(id_nota_fiscal)
 );
