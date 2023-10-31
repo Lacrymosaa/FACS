@@ -15,7 +15,7 @@ CREATE TABLE Usuario (
 -- Tabela Departamento
 CREATE TABLE Departamento  (
     id_departamento INT PRIMARY KEY AUTO_INCREMENT,
-    nome_departamento VARCHAR(50)
+    nome_departamento VARCHAR(50) NOT NULL
 );
 
 -- Tabela Nota Fiscal
