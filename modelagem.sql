@@ -5,9 +5,11 @@ USE `db_facs`;
 
 -- Tabela Usuario
 CREATE TABLE Usuario (
-    id_usuario INT PRIMARY KEY,
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
     email VARCHAR(100),
-    senha_hash VARCHAR(100)
+    senha_hash VARCHAR(100),
+    reset_token VARCHAR(255),
+    expire DATETIME
 );
 
 -- Tabela Departamento
