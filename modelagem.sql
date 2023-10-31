@@ -5,15 +5,17 @@ USE `db_facs`;
 
 -- Tabela Usuario
 CREATE TABLE Usuario (
-    id_usuario INT PRIMARY KEY,
-    email VARCHAR(100),
-    senha_hash VARCHAR(100)
+    id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(100) NOT NULL,
+    senha_hash VARCHAR(100) NOT NULL,
+    reset_token VARCHAR(255),
+    expire DATETIME
 );
 
 -- Tabela Departamento
 CREATE TABLE Departamento  (
     id_departamento INT PRIMARY KEY AUTO_INCREMENT,
-    nome_departamento VARCHAR(50)
+    nome_departamento VARCHAR(50) NOT NULL
 );
 
 -- Tabela Nota Fiscal
