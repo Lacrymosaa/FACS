@@ -6,8 +6,8 @@ USE `db_facs`;
 -- Tabela Usuario
 CREATE TABLE Usuario (
     id_usuario INT PRIMARY KEY AUTO_INCREMENT,
-    email VARCHAR(100),
-    senha_hash VARCHAR(100),
+    email VARCHAR(100) NOT NULL,
+    senha_hash VARCHAR(100) NOT NULL,
     reset_token VARCHAR(255),
     expire DATETIME
 );
