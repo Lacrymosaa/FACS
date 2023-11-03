@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lexend', sans-serif;
+	font-weight: 400;
+}
+
+body {
+	background-color: #e7e7e7;
+}
+
+label {
+	display: flex;
+	margin-left: 80px;
+	width: 50%;
+	padding: 10px;
+}
+
+input {
+	width: 60%;
+	padding: 10px;
+	border-radius: 20px;
+	background: rgba(255, 255, 255, 0.10);
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	border: 2px #E9E9E9 solid;
+	outline: none;
+}
+
+.img {
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	align-content: center;
+	margin-top: 200px;
+}
+
+.box {
+	background-color: #FF4F4F;
+	box-shadow: 1px 1px 1em #888;
+	width: 500px;
+	height: 550px;
+
+}
+
+.bar {
+	background-color: white;
+	width: 500px;
+	height: 540px;
+	display: inline-block;
+}
+
+.p-login {
+	margin-top: 20px;
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.alterar-senha a {
+	text-decoration: none;
+	color: #FF4F4F;
+	display: inline-flex;
+	margin-top: 30px;
+}
+
+.botao {
+	padding: 8px 30px;
+	border-radius: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background-color: #FF4F4F;
+	color: white;
+	border: none;
+	font-size: 15px;
+}
+
+.botao:hover {
+	background-color: rgb(182, 0, 0);
+	outline: invert;
+	cursor: pointer;
+}
+
+.botao-nova-conta a {
+	text-decoration: none;
+	color: #FF4F4F;
+}
+
+.botao-nova-conta a:hover {
+	color: rgb(182, 0, 0);
+}
+
+.alterar-senha a:hover {
+	color: rgb(182, 0, 0);
+}
+
+@media screen and (max-width:500px) {
+	.login {
+		display: block;
+	}
+}
