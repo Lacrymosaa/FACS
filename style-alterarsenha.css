@@ -33,22 +33,21 @@ input {
 	justify-content: center;
 }
 
-.login {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	align-content: center;
-	margin-top: 200px;
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    height: 100vh;
 }
 
-.box {
-	background-color: #FF4F4F;
-	box-shadow: 1px 1px 1em #888;
-	width: 500px;
-	height: 550px;
-
+.login-box {
+    background-color: #FF4F4F;
+    box-shadow: 1px 1px 1em #888;
+    width: 500px;
+    height: 550px;
 }
 
 .bar {
