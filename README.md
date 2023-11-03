@@ -1,6 +1,6 @@
 # FACS
-<img src="https://github.com/MarianVulpes/FACS/blob/main/logo-facs.png" align="center">
-<p align="center">Projeto de gerenciador de patrimônios para Fatec | Empresa Júnior</p>
+<img src="https://github.com/MarianVulpes/FACS/blob/main/logo-facs.png">
+Projeto de gerenciador de patrimônios para Fatec | Empresa Júnior
 
 # Membros:
 * <a href="https://github.com/EvaAnanias"> Eva Ananias </a>
