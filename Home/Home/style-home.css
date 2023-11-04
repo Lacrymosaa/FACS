@@ -1,0 +1,230 @@
+* {
+	margin: 0%;
+	font-family: 'Lexend', sans-serif;
+}
+
+p {
+	margin: 2%;
+}
+
+.mais {
+	width: 16px;
+	padding-right: 10px;
+}
+
+.nota-fiscal,
+.patrimonio,
+.departamento,
+.sair-responsivo,
+.sair {
+	width: 70%;
+	margin: 10px;
+	border-radius: 20px;
+	background-color: #FF4F4F;
+	font-size: 15px;
+	color: white;
+	border: 0;
+	text-align: center;
+	padding: 10px 25px;
+}
+
+.sair-responsivo{
+	display: none !important;
+}
+
+.sair {
+	position: absolute;
+	width: 10%;
+	margin-left: 10%;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.botoes {
+	display: none;
+	width: 15%;
+	background-color: #faf7f7;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 15px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 50px 50px;
+	text-align: center;
+	margin-left: 30%;
+	position: absolute;
+	left: 0;
+	top: 10%;
+
+	/* Hidden para aparecer esses botões apenas se apertar em "+ Adcionar novo" */
+}
+
+.botao-adicionar-novo {
+	margin-left: 15%;
+	background: #FF4F4F;
+	border-radius: 20px;
+	background-color: #FF4F4F;
+	font-size: 15px;
+	color: white;
+	border: 0;
+	text-align: center;
+	padding: 10px 25px;
+	transition: background-color 0.3s;
+}
+
+.botao-adicionar-novo:hover,
+.nota-fiscal:hover,
+.patrimonio:hover,
+.departamento:hover,
+.sair-responsivo:hover
+.sair:hover {
+	background-color: #FF7F7F;
+}
+
+.bem-vindo {	
+	font-size: 50px;
+	font-weight: 550;
+	top: 45%;
+	left: 50%;
+	position: absolute;
+}
+
+.cor {
+	color: #FF4F4F;
+}
+
+.background {
+	width: 500px;
+	left: 40%;
+	position: absolute;
+	top: 30%;
+}
+
+.atalho,
+.visualizar,
+.locais,
+.sala {
+	line-height: normal;
+	white-space: nowrap;
+	padding-bottom: 12px;
+}
+
+.sala {
+	padding: 0 0 2px 0;
+}
+
+.remove {
+	width: 25%;
+	margin-top: 5%;
+	margin-left: 2%;
+	height: 8cm;
+	overflow-y: scroll;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 1270px) {
+	.botoes {
+		position: absolute;
+		margin-left: 30%;
+		width: 17%;
+	}
+
+	.botao-adicionar-novo {
+		margin-left: 9%;
+	}
+
+	.bem-vindo {
+		top: 40%;
+	}
+}
+
+@media screen and (max-width: 1055px) {
+	.botoes {
+		margin-left: 30%;
+		width: 20%;
+	}
+
+	.botao-adicionar-novo {
+		margin-left: 10%;
+		padding: 10px 18px;
+	}
+
+	.bem-vindo {
+		left: 50%;
+	}
+}
+
+@media screen and (max-width: 910px) {
+	.botoes {
+		margin-left: 30%;
+		width: 25%;
+	}
+
+	.botao-adicionar-novo {
+		margin-left: 6%;
+		padding: 10px 20px;
+	}
+
+	.bem-vindo {
+		left: 55%;
+	}
+}
+
+@media screen and (max-width: 715px) {
+	.botoes {
+		margin-left: 35%;
+		width: 25%;
+	}
+
+	.botao-adicionar-novo {
+		margin-left: 2%;
+		padding: 10px 20px;
+	}
+
+	.bem-vindo {
+		left: 55%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.logo {
+		text-align: center;
+	}
+
+	.background,
+	.botao-adicionar-novo,
+	.remove,
+	.bem-vindo,
+	.sair {
+		display: none;
+	}
+
+	.nota-fiscal,
+	.patrimonio,
+	.departamento,
+	.sair-responsivo {
+		margin-bottom: 10px;
+		display: block !important;
+		width: 100%;
+	}
+
+	.botoes {
+		display: block !important;
+		width: 60% !important;
+		margin-left: 20% !important;
+		margin-right: 20% !important;
+		box-shadow: none !important;
+		top: 20% !important;
+	}
+
+}
+
+/* Deixar nas listagens o css 
+
+item responsivo: white-space: nowrap;
+
+box responsito:
+		display: flex;
+		flex-flow: row;
+		overflow-x: scroll;*/
