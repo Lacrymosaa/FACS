@@ -100,6 +100,32 @@ class Patrimonio
             return false;
         }
     }
+
+        public function listarPatrimonioPorId($id_patrimonio)
+    {
+        try {
+            $stmt = $this->conn->prepare("SELECT * FROM Patrimonio WHERE id_patrimonio = :id_patrimonio");
+            $stmt->bindParam(':id_patrimonio', $id_patrimonio);
+            $stmt->execute();
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+    }
+
+    public function filtrarPatrimonioPorNome($nome_objeto)
+    {
+        try {
+            $stmt = $this->conn->prepare("SELECT * FROM Patrimonio WHERE nome_objeto LIKE :nome_objeto");
+            $stmt->bindValue(':nome_objeto', '%' . $nome_objeto . '%');
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+    }
 }
 
 ?>
