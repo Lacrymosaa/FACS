@@ -1,0 +1,70 @@
+.layout,
+.local {
+	position: absolute;
+	width: 60%;
+	margin-left: 10%;
+	top: 10%;
+}
+
+.alinhamento {
+	width: 70%;
+	position: absolute;
+	padding-bottom: 30%;
+	margin-top: -35%;
+	right: 0;
+	text-align: left;
+}
+
+.layout {
+	top: 0%;
+	border-bottom: 2px solid #000;
+}
+
+.local {
+	top: 25% !important;
+	min-height: 60%;
+	position: absolute;
+	height: 10%;
+	overflow: auto;
+}
+
+.pesquisa {
+	margin-left: 15%;
+	margin-top: 9%;
+}
+
+input {
+	width: 400px;
+	height: 35px;
+	border-radius: 10px;
+	padding: 0 0 0 35px;
+	background-image: url("../../Imagens/locais/lupa.png");
+	background-position: 10px;
+	background-repeat: no-repeat;
+	background-size: 20px;
+	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tabela {
+	width: 100%;
+	text-align: center;
+}
+
+.itens {
+	margin-top: 5%;
+}
+
+.linha {
+	width: 100%;
+	display: flex !important;
+	justify-content: space-around;
+	border: none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	padding: 10px 0 10px 0;
+	margin-top: 10px;
+}
+
+td {
+	width: 20%;
+}
