@@ -1,0 +1,95 @@
+.editaritens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.alinhamento {
+    width: 70%;
+    position: absolute;
+    margin-top: -32%;
+    right: 0;
+    text-align: left;
+}
+
+.menu {
+    margin-right: 987px !important;
+}
+
+.box {
+    background-color: #f2f2f2; /* Cor de fundo cinza */
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.bar {
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 280px;
+    background: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: 1px #ccc solid;
+}
+.container {
+    text-align: center; 
+  }
+  
+button {
+    display: inline-block;
+    margin: 15px; 
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 0.5px solid #333;
+  }
+  
+
+  .botao2 {
+    background-color: #4caf50;
+    padding: 10px;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+.botao3 {
+    background-color: #ce0000;
+    padding: 10px;
+    width: 120px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: Lexend Deca;
+    font-weight: 400;
+    word-wrap: break-word
+}
+
+
+button.botao:hover {
+    background-color: #45a049;
+}
