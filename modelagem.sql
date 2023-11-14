@@ -27,7 +27,7 @@ CREATE TABLE NotaFiscal (
     pregao VARCHAR(50) NOT NULL,
     valor FLOAT NOT NULL,
     nf_status BIT NOT NULL,
-    nf_file VARCHAR(100) NOT NULL
+    nf_file VARCHAR(100)
 );
 
 
