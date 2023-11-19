@@ -8,6 +8,7 @@
   <title>Home</title>
 
   <script>
+
     function Conteudo(el) {
       var display = document.getElementById(el).style.display;
       if (display == "none")
@@ -20,37 +21,42 @@
 
 <body>
   <header>
-    <div class="logo">
-      <img src="../../Imagens/home/logo1 1.png" alt="Logo do Facs CPS">
+    <div>
+      <img src="../../Imagens/home/logo1 1.png" class="logo" alt="Logo do Facs CPS">
     </div>
-    <h1 class="bem-vindo">Bem <span class="cor">vindo(a)</span>.</h1>
+    <div class="alinhamento">
+      <h1 class="bem-vindo">Bem <span class="cor">vindo(a)</span>.</h1>
+    </div>
   </header>
   <section>
     <div>
-      <form action="">
+      <form class="menu" action="">
         <button class="botao-adicionar-novo" type="button" onclick="Conteudo('container-linha-premium')"><img
             class="mais" src="../../Imagens/home/mais.png" alt="">Adcionar novo</button>
-      </form>
-      <div>
-        <div id="container-linha-premium" class="botoes">
-          <button class="nota-fiscal">Nota Fiscal</button>
-          <button class="patrimonio">Patrimônio</button>
-          <button class="departamento">Departamento</button>
-          <button class="sair-responsivo"><a href="../../Login/login-web.html">Sair</a></button>
+
+        <div>
+          <div id="container-linha-premium" class="botoes">
+            <button class="nota-fiscal">Nota Fiscal</button>
+            <button class="patrimonio">Patrimônio</button>
+            <button class="departamento">Departamento</button>
+            <button class="sair-responsivo"><a href="../../Login/login-web.html">Sair</a></button>
+          </div>
         </div>
-      </div>
-      <div class="remove">
-        <h2 class="atalho"><strong>Atalhos</strong></h2>
-        <p class="visualizar">Visualizar Notas Fiscais</p>
-        <p class="locais"><strong>Locais</strong></p>
-        <p class="sala">Sala 01</p>
-        <p class="sala">Sala 02</p>
-        <p class="sala">Sala 03</p>
-      </div>
+        <div class="remove">
+          <h2 class="atalho"><strong>Atalhos</strong></h2>
+          <p class="visualizar">Visualizar Notas Fiscais</p>
+          <p class="locais"><strong>Locais</strong></p>
+          <p class="sala">Sala 01</p>
+          <p class="sala">Sala 02</p>
+          <p class="sala">Sala 03</p>
+          <p class="sala">Sala 04</p>
+          <p class="sala">Sala 05</p>
+        </div>
     </div>
+    </form>
 
     <img class="background" src="../../Imagens/home/logo1 2.png" />
-      <button class="sair"><a href="../../Login/login-web.html">Sair</a></button>
+    <button class="sair"><a href="../../Login/login-web.html">Sair</a></button>
   </section>
 
 </body>

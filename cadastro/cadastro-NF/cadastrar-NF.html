@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../menu/style-menu.css">
+	<link rel="stylesheet" href="style-cadastrar-NF.css">
+	<title>Cadastro NF</title>
+
+	<script>
+
+		function Conteudo(el) {
+			var display = document.getElementById(el).style.display;
+			if (display == "none")
+				document.getElementById(el).style.display = 'block';
+			else
+				document.getElementById(el).style.display = 'none';
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<div>
+			<img src="../../Imagens/home/logo1 1.png" class="logo" alt="Logo do Facs CPS">
+		</div>
+	</header>
+	<section>
+		<div>
+			<form class="menu" action="">
+				<button class="botao-adicionar-novo" type="button" onclick="Conteudo('container-linha-premium')"><img
+						class="mais" src="../../Imagens/home/mais.png" alt="">Adcionar novo</button>
+
+				<div>
+					<div id="container-linha-premium" class="botoes">
+						<button class="nota-fiscal">Nota Fiscal</button>
+						<button class="patrimonio">Patrimônio</button>
+						<button class="departamento">Departamento</button>
+						<button class="sair-responsivo"><a href="../../Login/login-web.html">Sair</a></button>
+					</div>
+				</div>
+				<div class="remove">
+					<h2 class="atalho"><strong>Atalhos</strong></h2>
+					<p class="visualizar">Visualizar Notas Fiscais</p>
+					<p class="locais"><strong>Locais</strong></p>
+					<p class="sala">Sala 01</p>
+					<p class="sala">Sala 02</p>
+					<p class="sala">Sala 03</p>
+					<p class="sala">Sala 04</p>
+					<p class="sala">Sala 05</p>
+				</div>
+
+				<button class="sair"><a href="../../Login/login-web.html">Sair</a></button>
+		</div>
+		</form>
+	</section>
+	<div class="cadastrar-nf alinhamento">
+		<div class="box">
+			<div class="bar">
+				<form>
+					<h1 class="h1-cadastrar-nf">Cadastrar Nota Fiscal</h1>
+
+					<label for="numero">Número da Nota Fiscal</label>
+					<input type="text" id="numero">
+
+					<label for="processo">Processo</label>
+					<input type="text" id="processo">
+
+					<label for="data">Data de emissão</label>
+					<input type="date" id="data">
+
+					<label for="pregao">Pregão</label>
+					<input type="text" id="pregao">
+
+					<label for="valor">Valor</label>
+					<input type="text" id="valor">
+
+					<button class="botao1">Carregar Nova Nota Fiscal</button>
+
+					<div class="button-container">
+						<button class="botao2">Salvar</button>
+						<button class="botao3">Cancelar</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

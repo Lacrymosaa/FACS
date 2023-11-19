@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../menu/style-menu.css">
+	<link rel="stylesheet" href="style-cadastrar-itens.css">
+	<title>Cadastrar Itens</title>
+	<script>
+
+		function Conteudo(el) {
+			var display = document.getElementById(el).style.display;
+			if (display == "none")
+				document.getElementById(el).style.display = 'block';
+			else
+				document.getElementById(el).style.display = 'none';
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<div>
+			<img src="../../Imagens/home/logo1 1.png" class="logo" alt="Logo do Facs CPS">
+		</div>
+	</header>
+	<section>
+		<div>
+			<form class="menu" action="">
+				<button class="botao-adicionar-novo" type="button" onclick="Conteudo('container-linha-premium')"><img
+						class="mais" src="../../Imagens/home/mais.png" alt="">Adcionar novo</button>
+
+				<div>
+					<div id="container-linha-premium" class="botoes">
+						<button class="nota-fiscal">Nota Fiscal</button>
+						<button class="patrimonio">Patrimônio</button>
+						<button class="departamento">Departamento</button>
+						<button class="sair-responsivo"><a href="../../Login/login-web.html">Sair</a></button>
+					</div>
+				</div>
+				<div class="remove">
+					<h2 class="atalho"><strong>Atalhos</strong></h2>
+					<p class="visualizar">Visualizar Notas Fiscais</p>
+					<p class="locais"><strong>Locais</strong></p>
+					<p class="sala">Sala 01</p>
+					<p class="sala">Sala 02</p>
+					<p class="sala">Sala 03</p>
+					<p class="sala">Sala 04</p>
+					<p class="sala">Sala 05</p>
+				</div>
+
+				<button class="sair"><a href="../../Login/login-web.html">Sair</a></button>
+		</div>
+		</form>
+	</section>
+	<div class="cadastrar-nf alinhamento">
+		<div class="box">
+			<div class="bar">
+				<form>
+					<h1 class="h1-cadastrar-nf">Cadastrar itens</h1>
+					<h1></h1>
+
+					<label for="numero_NF">Número da Nota Fiscal</label>
+					<select id="selecao" name="numero_NF">
+						<option value="opcao1" selected>483483</option>
+						<option value="opcao2">483484</option>
+						<option value="opcao3">...</option>
+					</select>
+
+					<label for="quantidade">Quantidade</label>
+					<input type="number" id="quantidade">
+
+					<label for="categoria">Categoria</label>
+					<select id="selecao" name="categoria">
+						<option value="opcao1" selected>Cadeira</option>
+						<option value="opcao2">Mesa</option>
+						<option value="opcao3">...</option>
+					</select>
+
+					<label for="arquivo">Selecione um arquivo:</label>
+					<input type="file" id="inputFile" accept="image/*">
+					<button class="botao1">Continuar registro</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
