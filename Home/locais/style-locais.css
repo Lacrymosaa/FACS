@@ -1,32 +1,41 @@
-.layout,
-.local {
+.layout {
 	position: absolute;
-	width: 50%;
-	margin-left: 30%;
-	top: 10%;
+	width: 60%;
+	margin-left: 10%;
+	margin-top: 2%;
+}
+
+.alinhamento {
+	width: 70%;
+	position: absolute;
+	padding-bottom: 0.4%;
+	margin-top: 0%;
+	right: 0;
+	text-align: left;
 }
 
 .layout {
+	top: 0%;
 	border-bottom: 2px solid #000;
 }
 
 .local {
-	top: 33% !important;
-	min-height: 60%;
+	margin-top: 2% !important;
+	margin-left: 10%;
+	width: 80%;
+	min-height: 10%;
 	position: absolute;
-	height: 10%;
+	height: 60%;
 	overflow: auto;
 }
 
 .pesquisa {
-	text-align: center;
-	width: 50%;
-	margin-left: 30%;
-	margin-top: 2%;
+	margin-left: 15%;
+	margin-top: 12%;
 }
 
 input {
-	width: 500px;
+	width: 400px;
 	height: 35px;
 	border-radius: 10px;
 	padding: 0 0 0 35px;
@@ -59,4 +68,30 @@ input {
 
 td {
 	width: 20%;
+}
+
+@media screen and (max-width: 715px) {
+	.pesquisa {
+		margin-top: 18%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.botoes {
+		display: none !important;
+	}
+
+	input {
+		width: 300px;
+	}
+
+	.layout {
+		width: 80%;
+	}
+
+	.alinhamento {
+		width: 90%;
+		margin-top: 10%;
+		margin-right: 5%;
+	}
 }
