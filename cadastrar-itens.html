@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../../menu/style-menu.css">
+	<link rel="stylesheet" href="style-itens(end).css">
+	<title>Cadastrar Itens</title>
+	<script>
+
+		function Conteudo(el) {
+			var display = document.getElementById(el).style.display;
+			if (display == "none")
+				document.getElementById(el).style.display = 'block';
+			else
+				document.getElementById(el).style.display = 'none';
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<div class="logo-responsiva">
+			<img src="../../Imagens/home/logo1 1.png" class="logo" alt="Logo do Facs CPS">
+		</div>
+	</header>
+	<section>
+		<div>
+			<form class="menu" action="">
+				<button class="botao-adicionar-novo" type="button" onclick="Conteudo('container-linha-premium')"><img
+						class="mais" src="../../Imagens/home/mais.png" alt="">Adcionar novo</button>
+
+				<div>
+					<div id="container-linha-premium" class="botoes">
+						<button class="nota-fiscal">Nota Fiscal</button>
+						<button class="patrimonio">Patrimônio</button>
+						<button class="departamento">Departamento</button>
+						<button class="sair-responsivo"><a href="../../Login/login-web.html">Sair</a></button>
+					</div>
+				</div>
+				<div class="remove">
+					<h2 class="atalho"><strong>Atalhos</strong></h2>
+					<p class="visualizar">Visualizar Notas Fiscais</p>
+					<p class="locais"><strong>Locais</strong></p>
+					<p class="sala">Sala 01</p>
+					<p class="sala">Sala 02</p>
+					<p class="sala">Sala 03</p>
+					<p class="sala">Sala 04</p>
+					<p class="sala">Sala 05</p>
+				</div>
+
+				<button class="sair"><a href="../../Login/login-web.html">Sair</a></button>
+		</div>
+		</form>
+	</section>
+	<div class="alinhamento">
+		<div class="box">
+			<div class="bar">
+				<form class="conteudo">
+					<h1 class="h1-cadastrar">Confirmar registro de itens</h1>
+					<p>Número da nota</p>
+					<p>483483</p>
+					<p>Categoria</p>
+					<p>Cadeira</p>
+					<img class="imagem" src="../../Imagens/cadastrar/imagem 400x250.png"
+						alt="Imagem de um dos patrimônios da FATEC">
+					<div class="container">
+						<div class="tabela">
+							<h2 class="espaco">Itens Registrados</h2>
+							<div class="table-container">
+								<table class="alinhamento-tabela">
+									<tr>
+										<td>482932</td>
+									</tr>
+									<tr>
+										<td>482933</td>
+									</tr>
+									<tr>
+										<td>482933</td>
+									</tr>
+									<tr>
+										<td>482934</td>
+									</tr>
+									<tr>
+										<td>482935</td>
+									</tr>
+									<tr>
+										<td>482936</td>
+									</tr>
+									<tr>
+										<td>482937</td>
+									</tr>
+									<tr>
+										<td>482938</td>
+									</tr>
+									<tr>
+										<td>482939</td>
+									</tr>
+									<tr>
+										<td>482940</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<button class="botao1">Registrar itens</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
