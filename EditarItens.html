@@ -1,0 +1,77 @@
+,<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../EditarNotas/style-menu.css">
+	<link rel="stylesheet" href="style-menu.css">
+	<link rel="stylesheet" href="editaritens.css">
+	<title>Editar Itens</title>
+</head>
+
+<body>
+	<section>
+		<div>
+			<form class="menu" action="">
+				<button class="botao-adicionar-novo" type="button" onclick="Conteudo('container-linha-premium')"><img
+						class="mais" src="../../Imagens/home/mais.png" alt="">Adcionar novo</button>
+
+				<div>
+					<div id="container-linha-premium" class="botoes">
+						<button class="nota-fiscal">Nota Fiscal</button>
+						<button class="patrimonio">Patrimônio</button>
+						<button class="departamento">Departamento</button>
+						<button class="sair-responsivo"><a href="../../Login/login-web.html">Sair</a></button>
+					</div>
+				</div>
+				<div class="remove">
+					<h2 class="atalho"><strong>Atalhos</strong></h2>
+					<p class="visualizar">Visualizar Notas Fiscais</p>
+					<p class="locais"><strong>Locais</strong></p>
+					<p class="sala">Sala 01</p>
+					<p class="sala">Sala 02</p>
+					<p class="sala">Sala 03</p>
+					<p class="sala">Sala 04</p>
+					<p class="sala">Sala 05</p>
+				</div>
+
+				<button class="sair"><a href="../../Login/login-web.html">Sair</a></button>
+			</form>
+		</div>
+	</section>
+	<div class="editaritens alinhamento">
+		<div class="box">
+			<div class="bar">
+				<form>
+
+					<label for="numero">Número do Patrimônio</label>
+					<input type="text" id="numero">
+
+					<label for="observacoes">Observações</label>
+					<input type="text" id="observacoes">
+
+					<label for="tipo">Tipo</label>
+					<input type="text" id="tipo">
+
+					<label for="localizacao">Localização</label>
+					<input type="text" id="localizacao">
+
+					<label for="conservacao">Conservação</label>
+					<input type="text" id="conservacao">
+
+					<label for="nf">NF</label>
+					<input type="text" id="nf">
+
+					<div class="container">
+						<button class="botao3">Excluir</button>
+						<button class="botao2">Salvar</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
