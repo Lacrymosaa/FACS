@@ -69,3 +69,29 @@ input {
 td {
 	width: 20%;
 }
+
+@media screen and (max-width: 715px) {
+	.pesquisa {
+		margin-top: 18%;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.botoes {
+		display: none !important;
+	}
+
+	input {
+		width: 300px;
+	}
+
+	.layout {
+		width: 80%;
+	}
+
+	.alinhamento {
+		width: 90%;
+		margin-top: 10%;
+		margin-right: 5%;
+	}
+}

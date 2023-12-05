@@ -220,7 +220,7 @@ a {
 
 @media screen and (max-width: 550px) {
 	.logo {
-		text-align: center;
+		width: 80px;
 	}
 
 	.background,
@@ -238,6 +238,7 @@ a {
 		margin-bottom: 10px;
 		display: block !important;
 		width: 100%;
+		font-size: 20px;
 	}
 
 	.botoes {
@@ -249,13 +250,12 @@ a {
 		top: 20% !important;
 	}
 
+	.alinhamento {
+		box-shadow: none;
+	}
+
+	.logo-responsiva {
+		text-align: center;
+		margin-right: 15%;
+	}
 }
-
-/* Deixar nas listagens o css 
-
-item responsivo: white-space: nowrap;
-
-box responsito:
-		display: flex;
-		flex-flow: row;
-		overflow-x: scroll;*/
