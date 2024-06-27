@@ -1,5 +1,5 @@
 # FACS
-<img src="https://github.com/MarianVulpes/FACS/blob/main/logo-facs.png">
+<img src="https://github.com/Lacrymosaa/FACS/blob/main/logo-facs.png">
 Projeto de gerenciador de patrimônios para Fatec | Empresa Júnior
 
 # Membros:
